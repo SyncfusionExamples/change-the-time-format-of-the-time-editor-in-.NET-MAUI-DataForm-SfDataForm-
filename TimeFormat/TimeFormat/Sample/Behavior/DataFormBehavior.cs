@@ -15,7 +15,7 @@ namespace TimeFormat
                 dataForm.GenerateDataFormItem += OnGenerateDataFormItem;
             }
         }
-        private void OnGenerateDataFormItem(object sender, GenerateDataFormItemEventArgs e)
+        private void OnGenerateDataFormItem(object? sender, GenerateDataFormItemEventArgs e)
         {
             if (e.DataFormItem!= null)
             {
@@ -32,8 +32,6 @@ namespace TimeFormat
             {
                 dataForm.GenerateDataFormItem -= OnGenerateDataFormItem;
             }
-
-            dataForm = null;
         }
     }
 }
